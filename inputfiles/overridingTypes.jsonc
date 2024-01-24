@@ -2576,6 +2576,26 @@
                 },
                 "methods": {
                     "method": {
+                        "cancel": {
+                            "signature": {
+                                "0": {
+                                    "typeParameters": [
+                                        {
+                                            "name": "R",
+                                            "default": "unknown"
+                                        }
+                                    ],
+                                    "param": [
+                                        {
+                                            "name": "reason",
+                                            "optional": true,
+                                            "overrideType": "R"
+                                        },
+                                    ],
+                                    "overrideType": "Promise<R>"
+                                }
+                            }
+                        },
                         "getReader": {
                             "additionalSignatures": [
                                 "getReader(options: { mode: \"byob\" }): ReadableStreamBYOBReader",
